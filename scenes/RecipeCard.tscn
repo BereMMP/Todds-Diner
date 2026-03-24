@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq47x61fgxui0"]
+
+[ext_resource type="Texture2D" uid="uid://bhu70i6xriuk" path="res://assets/RecipeCard.png" id="1_13tx3"]
+[ext_resource type="FontFile" uid="uid://crg6n3pa1nitr" path="res://Font/minecraft-font/MinecraftRegular-Bmg3.otf" id="2_u43ag"]
+
+[sub_resource type="GDScript" id="GDScript_e5vlm"]
+script/source = "extends TextureButton
+
+var data
+
+func setup(info: Dictionary):
+	data = info
+	$HBoxContainer/CardImage.texture = load(info[\"image\"])
+	$HBoxContainer/VBoxContainer/NameLabel.text = info[\"name\"]
+	$HBoxContainer/VBoxContainer/TimeLabel.text = info[\"time\"]
+	$HBoxContainer/VBoxContainer/ServingsLabel.text = info[\"servings\"]
+	$HBoxContainer/VBoxContainer/RatingLabel.text = \"★\" + str(info[\"rating\"])
+"
+
+[node name="RecipeCard" type="TextureButton"]
+offset_right = 832.0
+offset_bottom = 194.0
+texture_normal = ExtResource("1_13tx3")
+script = SubResource("GDScript_e5vlm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 828.0
+offset_bottom = 188.0
+theme_override_constants/separation = 0
+
+[node name="CardImage" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(810, 200)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="NameLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.604355, 0.399703, 0.239161, 1)
+theme_override_fonts/font = ExtResource("2_u43ag")
+theme_override_font_sizes/font_size = 34
+text = " Recipe Name: "
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TimeLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.603922, 0.4, 0.239216, 1)
+theme_override_fonts/font = ExtResource("2_u43ag")
+theme_override_font_sizes/font_size = 25
+text = "    Estimated Time: "
+
+[node name="ServingsLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.603922, 0.4, 0.239216, 1)
+theme_override_fonts/font = ExtResource("2_u43ag")
+theme_override_font_sizes/font_size = 25
+text = "    Servings: "
+
+[node name="RatingLabel" type="Label" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.603922, 0.4, 0.239216, 1)
+theme_override_fonts/font = ExtResource("2_u43ag")
+theme_override_font_sizes/font_size = 25
+text = "    Rating: "

@@ -1,0 +1,21 @@
+[
+  {
+	"name": "Alfred's Apple Pie",
+	"from": "Alfred Pennyworth",
+	"servings": "8 serviings",
+	"rating": 5,
+	"cook_time": "45 min",
+	"ingredients": [
+	  "2 cups flour",
+	  "1/2 cup sugar",
+	  "3 apples"
+	],
+	"instructions": [
+	  "Preheat oven to 375°F",
+	  "Mix dry ingredients...",
+	  "Bake for 40 minutes."
+	],
+	"image": "res://assets/images/apple_pie.png",
+	"favorite": true
+  }
+]

@@ -1,0 +1,9 @@
+[
+	{
+		"image": "res://assets/foodImages/pancakes.png",
+		"name": "Classic Pancakes",
+		"time": "15 min",
+		"serving": "8 servings",
+		"rating": 4
+	}
+]

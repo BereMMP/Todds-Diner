@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://dxcdflaehxd80"]
+
+[ext_resource type="Texture2D" uid="uid://c8tex1ieo1shy" path="res://assets/RecipeScreenBackground.png" id="1_vax0y"]
+[ext_resource type="Script" uid="uid://b6syl3kvtfms4" path="res://scripts/recipeDetail.gd" id="1_xbw84"]
+[ext_resource type="Texture2D" uid="uid://sby7m2y7f5o3" path="res://animation/TransitionForward2_0016.png" id="3_q2p0x"]
+[ext_resource type="Texture2D" uid="uid://v1bri0606yhb" path="res://assets/MenuBackground.png" id="3_t1f1y"]
+[ext_resource type="Texture2D" uid="uid://cr3rrww2grh7u" path="res://assets/recipeChoicesButton/BreakfastNormal.png" id="4_dcqdp"]
+[ext_resource type="Texture2D" uid="uid://dnmw7ss5si7lk" path="res://animation/TransitionForward2_0015.png" id="4_tg7b7"]
+[ext_resource type="FontFile" uid="uid://d3sx7dkb5k48g" path="res://Font/minecraft-font/MinecraftBold-nMK1.otf" id="4_x0u1l"]
+[ext_resource type="Texture2D" uid="uid://dieeutispe5bd" path="res://animation/TransitionForward2_0014.png" id="5_2qp61"]
+[ext_resource type="Texture2D" uid="uid://kjvamgde0rm4" path="res://assets/recipeChoicesButton/BreakfastPressed.png" id="5_jtiwf"]
+[ext_resource type="Texture2D" uid="uid://btonx11wvy8we" path="res://assets/recipeChoicesButton/BreakfastHover.png" id="6_155tr"]
+[ext_resource type="Texture2D" uid="uid://bf6vg4qu3r63n" path="res://animation/TransitionForward2_0013.png" id="6_j1onw"]
+[ext_resource type="Texture2D" uid="uid://dt5f111orh8r6" path="res://animation/TransitionForward2_0012.png" id="7_5e1lk"]
+[ext_resource type="Texture2D" uid="uid://dltn8vv0yovy8" path="res://assets/recipeChoicesButton/LunchNormal.png" id="7_r8gf5"]
+[ext_resource type="Texture2D" uid="uid://dyhk0okhggbtj" path="res://animation/TransitionForward2_0011.png" id="8_ajcol"]
+[ext_resource type="Texture2D" uid="uid://di3sdak6sk6pu" path="res://assets/recipeChoicesButton/LunchPressed.png" id="8_qgf78"]
+[ext_resource type="Texture2D" uid="uid://cism2p53vdtl5" path="res://assets/recipeChoicesButton/LunchHover.png" id="9_8tk8c"]
+[ext_resource type="Texture2D" uid="uid://bb08ir4riey0r" path="res://animation/TransitionForward2_0010.png" id="9_cig32"]
+[ext_resource type="Texture2D" uid="uid://dgo6ebxrioalu" path="res://assets/recipeChoicesButton/DinnerNormal.png" id="10_k5v61"]
+[ext_resource type="Texture2D" uid="uid://c2ajd6huqp7ne" path="res://animation/TransitionForward2_0009.png" id="10_lectc"]
+[ext_resource type="Texture2D" uid="uid://bjqx7botxdefm" path="res://animation/TransitionForward2_0008.png" id="11_d2lcr"]
+[ext_resource type="Texture2D" uid="uid://ws6o6rudm04o" path="res://assets/recipeChoicesButton/DinnerPressed.png" id="11_p7l01"]
+[ext_resource type="Texture2D" uid="uid://b2xrms20tewhi" path="res://animation/TransitionForward2_0007.png" id="12_0vpt4"]
+[ext_resource type="Texture2D" uid="uid://bue7q6mwg68an" path="res://assets/recipeChoicesButton/DinnerHover.png" id="12_v7kbv"]
+[ext_resource type="Texture2D" uid="uid://dvki5hjf374f4" path="res://assets/recipeChoicesButton/PastryNormal.png" id="13_80u3c"]
+[ext_resource type="Texture2D" uid="uid://chd7epcx256kl" path="res://animation/TransitionForward2_0006.png" id="13_dy2rf"]
+[ext_resource type="Texture2D" uid="uid://looj8vjrfabg" path="res://assets/recipeChoicesButton/PastryPressed.png" id="14_2dxbj"]
+[ext_resource type="Texture2D" uid="uid://p4jnw7nrsnu3" path="res://animation/TransitionForward2_0005.png" id="14_uequ5"]
+[ext_resource type="Texture2D" uid="uid://d05odbfuhf2ti" path="res://animation/TransitionForward2_0004.png" id="15_fs0cd"]
+[ext_resource type="Texture2D" uid="uid://dfskcsd3qur51" path="res://assets/recipeChoicesButton/PastryHover.png" id="15_rmqj1"]
+[ext_resource type="Texture2D" uid="uid://g4doojlwetiu" path="res://animation/TransitionForward2_0003.png" id="16_gtahu"]
+[ext_resource type="Texture2D" uid="uid://0p5knju2fyau" path="res://assets/MenuRecipeBackground.png" id="17_7tofl"]
+[ext_resource type="Texture2D" uid="uid://diy16qus7yaig" path="res://animation/TransitionForward2_0002.png" id="17_lrqu0"]
+[ext_resource type="Texture2D" uid="uid://c4jx2hyqcfqw" path="res://animation/TransitionForward2_0001.png" id="18_1p5r5"]
+[ext_resource type="PackedScene" uid="uid://cq47x61fgxui0" path="res://scenes/RecipeCard.tscn" id="18_f6vki"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8skkq"]
+texture = ExtResource("17_7tofl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iwco7"]
+texture = ExtResource("17_7tofl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_81au1"]
+texture = ExtResource("17_7tofl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_834vl"]
+texture = ExtResource("17_7tofl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lnt1s"]
+texture = ExtResource("17_7tofl")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jj2uj"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_q2p0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tg7b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2qp61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_j1onw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5e1lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ajcol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cig32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_lectc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d2lcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0vpt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dy2rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_uequ5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fs0cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gtahu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lrqu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1p5r5")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"transitionBack",
+"speed": 5.0
+}]
+
+[node name="RecipeDetails" type="Control" unique_id=954176234]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xbw84")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1998652380]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vax0y")
+expand_mode = 1
+
+[node name="MenuBackground" type="TextureRect" parent="." unique_id=1034512567]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 88.0
+offset_right = 1188.0
+offset_bottom = 760.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_t1f1y")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MenuBackground" unique_id=2088838726]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.501
+anchor_top = 0.391
+anchor_right = 0.501
+anchor_bottom = 0.391
+offset_left = -230.1
+offset_top = -19.16
+offset_right = 229.9
+offset_bottom = 20.84
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.180392, 0.0235294, 0.0745098, 1)
+theme_override_fonts/font = ExtResource("4_x0u1l")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="FoodChoices" type="BoxContainer" parent="MenuBackground" unique_id=1717539396]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = -440.0
+offset_right = -127.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.12, 1.12)
+alignment = 1
+
+[node name="BreakfastButton" type="TextureButton" parent="MenuBackground/FoodChoices" unique_id=2136839256]
+layout_direction = 2
+layout_mode = 2
+texture_normal = ExtResource("4_dcqdp")
+texture_pressed = ExtResource("5_jtiwf")
+texture_hover = ExtResource("6_155tr")
+
+[node name="LunchButton" type="TextureButton" parent="MenuBackground/FoodChoices" unique_id=150987735]
+layout_mode = 2
+texture_normal = ExtResource("7_r8gf5")
+texture_pressed = ExtResource("8_qgf78")
+texture_hover = ExtResource("9_8tk8c")
+
+[node name="DinnerButton" type="TextureButton" parent="MenuBackground/FoodChoices" unique_id=1789468396]
+layout_mode = 2
+texture_normal = ExtResource("10_k5v61")
+texture_pressed = ExtResource("11_p7l01")
+texture_hover = ExtResource("12_v7kbv")
+
+[node name="PastryButton" type="TextureButton" parent="MenuBackground/FoodChoices" unique_id=498632335]
+layout_mode = 2
+texture_normal = ExtResource("13_80u3c")
+texture_pressed = ExtResource("14_2dxbj")
+texture_hover = ExtResource("15_rmqj1")
+
+[node name="RecipeMenuBG" type="PanelContainer" parent="." unique_id=10506425]
+layout_mode = 0
+offset_left = 88.0
+offset_right = 1188.0
+offset_bottom = 760.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8skkq")
+
+[node name="RecipeListPanel" type="Panel" parent="RecipeMenuBG" unique_id=690561611]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_iwco7")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="RecipeMenuBG/RecipeListPanel" unique_id=1988202266]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 155.0
+offset_right = -45.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(190, -222)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RecipeMenuBG/RecipeListPanel/ScrollContainer" unique_id=1064293560]
+custom_minimum_size = Vector2(1010, 200)
+layout_mode = 2
+
+[node name="RecipeCard" parent="RecipeMenuBG/RecipeListPanel/ScrollContainer/VBoxContainer" unique_id=54274553 instance=ExtResource("18_f6vki")]
+layout_mode = 2
+
+[node name="RecipeDetailPanel" type="Panel" parent="RecipeMenuBG" unique_id=1571673842]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_81au1")
+
+[node name="AddRecipePanel" type="Panel" parent="RecipeMenuBG" unique_id=820034677]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_834vl")
+
+[node name="Panel" type="Panel" parent="." unique_id=422489739]
+visible = false
+layout_mode = 0
+offset_left = 88.0
+offset_right = 1188.0
+offset_bottom = 760.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_lnt1s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1041973322]
+visible = false
+position = Vector2(-22, -10)
+scale = Vector2(1.15, 1.15)
+sprite_frames = SubResource("SpriteFrames_jj2uj")
+animation = &"transitionBack"
+speed_scale = 6.0
+centered = false
